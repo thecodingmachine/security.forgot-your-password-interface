@@ -1,0 +1,28 @@
+{
+	"name" : "mouf/security.forgot-your-password-interface",
+	"description" : "The interfaces to implement when working with mouf/security.forgot-your-password.",
+	"keywords" : [
+		"mouf",
+		"password"
+	],
+	"homepage" : "http://mouf-php.com/packages/mouf/security.forgot-your-password-interface",
+	"type" : "mouf-library",
+	"license" : "MIT",
+	"authors" : [{
+			"name" : "David Négrier",
+			"email" : "d.negrier@thecodingmachine.com",
+			"homepage" : "http://mouf-php.com"
+		}
+	],
+	"require" : {
+		"php" : ">=7.0",
+		"mouf/security.userservice": "^2.0"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Mouf\\Security\\Password\\" : "src/"
+		}
+	},
+	"minimum-stability" : "dev",
+    "prefer-stable": true
+}
