@@ -1,7 +1,8 @@
 <?php
-use Mouf\Security\Password\Exception;
 
-class EmailNotFoundException implements \Mouf\Security\Password\Api\EmailNotFoundException
+namespace Mouf\Security\Password\Exception;
+
+class EmailNotFoundException extends \InvalidArgumentException implements \Mouf\Security\Password\Api\EmailNotFoundException
 {
     public static function notFound(string $email)
     {
