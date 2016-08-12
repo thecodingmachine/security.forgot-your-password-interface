@@ -18,7 +18,7 @@ interface ForgotYourPasswordDao
 
     /**
      * Returns a user based on its token.
-     * Throws an TokenNotFoundException if the email is not part of the database.
+     * Throws an TokenNotFoundException if the token is not part of the database.
      *
      * @param string $token
      *
